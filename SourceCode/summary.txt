@@ -1,0 +1,374 @@
+[DEBUG] [2020-06-01 15:53:32,583 +0800] - CommandLineArgs - parseCommandLine - START
+[DEBUG] [2020-06-01 15:53:32,598 +0800] - CommandLineArgs - parseCommandLine - END - arguments found: 6
+[DEBUG] [2020-06-01 15:53:32,604 +0800] - CommandLineArgs - parseCommandLine - START
+[DEBUG] [2020-06-01 15:53:32,605 +0800] - CommandLineArgs - parseCommandLine - END - arguments found: 6
+[INFO] [2020-06-01 15:53:32,951 +0800] - 
+------------------------------------------------------------------------
+-------------------- Start: Fetch Configuration ------------------------
+------------------------------------------------------------------------
+[INFO] [2020-06-01 15:53:32,952 +0800] - UnifiedAgent version (pluginVersion) : 19.9.2.3
+[INFO] [2020-06-01 15:53:33,050 +0800] - 
+##### general #####
+wss.url=https://saas.whitesourcesoftware.com/agent
+userKey=******
+updateType=OVERRIDE
+resolveAllDependencies=true
+productName=Eddy
+offline.zip=false
+log.level=debug
+includes=**/*.*
+forceUpdate.failBuildOnPolicyViolation=false
+forceUpdate=true
+forceCheckAllDependencies=true
+excludes=**/*sources.jar,**/*javadoc.jar,**/uaclient.config,**/log4j2.xml,**/UAClient-*.jar,**/wss-unified-agent-*.jar,**/wss-unified-agent.config
+configFilePath=/var/lib/jenkins/tools/WS_integrate/upload-wss-unified-agent.config
+checkPolicies=true
+appPath=
+#whiteSourceFolderPath=.
+#updateInventory=true
+#updateEmptyProject=true
+#scanReportTimeoutMinutes=10
+#scanReportFilenameFormat=project_with_timestamp
+#scanPackageManager=false
+#scanComment=
+#requireKnownSha1=true
+#requesterEmail=
+#projectVersion=
+#projectToken=
+#projectPerFolderIncludes=*
+#projectPerFolderExcludes=
+#projectPerFolder=false
+#projectName=
+#productVersion=
+#productToken=
+#offline.prettyJson=true
+#offline=false
+#ignoreSourceFiles=false
+#iaLanguage=
+#generateScanReport=false
+#generateProjectDetailsJson=false
+#failErrorLevel=DEFAULT
+#excludeDependenciesFromNodes=
+#euaVul=euaVul.json
+#euaRes=euaRes.json
+#euaOffline=
+#euaDep=euaDep.json
+#enableImpactAnalysis=false
+#docker.scanContainers=false
+#apiKey=
+#analyzeMultiModule=
+#analyzeFrameworksReference=analyzeFrameworks.txt
+#analyzeFrameworks=false
+
+##### ANT #####
+#ant.resolveDependencies=true
+#ant.pathIdIncludes=
+#ant.external.parameters=
+
+##### archive #####
+archiveIncludes=**/*.war,**/*.ear,**/*.zip,**/*.gzip,**/*.tar.bz2,**/*.tar.gz,**/*.tgz,**/*.tar
+archiveExtractionDepth=7
+archiveExcludes=**/*sources.jar
+
+##### artifactory #####
+#artifactory.userPassword=
+#artifactory.userName=
+#artifactory.url=
+#artifactory.repoKeys=
+#artifactory.enableScan=false
+#artifactory.accessToken=
+
+##### bower #####
+#bower.runPreStep=false
+#bower.resolveDependencies=true
+#bower.ignoreSourceFiles=false
+
+##### cabal #####
+#haskell.resolveDependencies=true
+
+##### cargo #####
+#cargo.runPreStep=false
+#cargo.resolveDependencies=true
+#cargo.ignoreSourceFiles=true
+
+##### cocoapods #####
+cocoapods.resolveDependencies=true
+#cocoapods.runPreStep=false
+#cocoapods.ignoreSourceFiles=true
+
+##### docker #####
+#docker.scanTarFiles=false
+#docker.scanImages=false
+#docker.scan.maxImages=0
+#docker.pull.tags=
+#docker.pull.maxImages=10
+#docker.pull.images=
+#docker.pull.force=false
+#docker.pull.enable=false
+#docker.pull.digest=
+#docker.login.sudo=true
+#docker.includes=.*.*
+#docker.includeSingleScan=
+#docker.excludes=
+#docker.delete.force=false
+#docker.containerIncludes=.*.*
+#docker.containerExcludes=
+
+##### docker artifactory #####
+#docker.artifactory.userPassword=
+#docker.artifactory.userName=
+#docker.artifactory.url=
+#docker.artifactory.repositoriesNames=
+#docker.artifactory.pullUrl=
+#docker.artifactory.enable=false
+#docker.artifactory.dockerAccessMethod= 
+
+##### docker aws #####
+#docker.aws.registryIds=
+#docker.aws.region=east
+#docker.aws.enable=false
+
+##### docker azure #####
+#docker.azure.userPassword=
+#docker.azure.userName=
+#docker.azure.registryNames=
+#docker.azure.enable=false
+
+##### docker google containers #####
+#docker.gcr.repositories=
+#docker.gcr.enable=false
+#docker.gcr.account=
+
+##### docker hub #####
+#docker.hub.userPassword=
+#docker.hub.userName=
+#docker.hub.organizationsNames=
+#docker.hub.enabled=false
+#docker.hub.accessToken=
+
+##### environment #####
+followSymbolicLinks=false
+case.sensitive.glob=false
+
+##### go #####
+#go.resolveDependencies=true
+#go.ignoreSourceFiles=false
+#go.gogradle.enableTaskAlias=false
+#go.glide.ignoreTestPackages=true
+#go.dependencyManager=
+#go.collectDependenciesAtRuntime=false
+
+##### gradle #####
+gradle.resolveDependencies=true
+#gradle.wrapperPath=
+#gradle.runPreStep=false
+#gradle.runAssembleCommand=true
+#gradle.preferredEnvironment=gradle
+#gradle.localRepositoryPath=
+#gradle.includedScopes=
+#gradle.includedConfigurations=
+#gradle.includeModules=
+#gradle.ignoredScopes=
+#gradle.ignoredConfigurations=
+#gradle.ignoreSourceFiles=false
+#gradle.excludeModules=
+#gradle.aggregateModules=false
+#gradle.additionalArguments=
+
+##### hex #####
+hex.aggregateModules=true
+#hex.runPreStep=false
+#hex.resolveDependencies=true
+#hex.ignoreSourceFiles=true
+
+##### html #####
+html.resolveDependencies=true
+
+##### maven #####
+#maven.runPreStep=false
+#maven.resolveDependencies=true
+#maven.m2RepositoryPath=
+#maven.ignoredScopes=
+#maven.ignoreSourceFiles=false
+#maven.ignorePomModules=true
+#maven.ignoreMvnTreeErrors=false
+#maven.environmentPath=
+#maven.downloadMissingDependencies=true
+#maven.aggregateModules=false
+#maven.additionalArguments=
+
+##### npm #####
+#npm.yarnProject=false
+#npm.yarn.frozenLockfile=false
+#npm.timeoutDependenciesCollectorInSeconds=60
+#npm.runPreStep=false
+#npm.resolveMainPackageJsonOnly=false
+#npm.resolveGlobalPackages=false
+#npm.resolveDependencies=true
+#npm.resolveAdditionalDependencies=false
+#npm.removeDuplicateDependencies=true
+#npm.projectNameFromDependencyFile=false
+#npm.includeDevDependencies=false
+#npm.ignoreSourceFiles=true
+#npm.ignoreScripts=false
+#npm.ignoreNpmLsErrors=false
+#npm.ignoreJavaScriptFiles=true
+#npm.identifyByNameAndVersion=false
+#npm.failOnNpmLsErrors=
+#npm.accessToken=
+
+##### nuget #####
+#nuget.runPreStep=false
+#nuget.restoreDependencies=false
+#nuget.resolvePackagesConfigFiles=true
+#nuget.resolveNuspecFiles=true
+#nuget.resolveDependencies=true
+#nuget.resolveCsProjFiles=true
+#nuget.preferredEnvironment=
+#nuget.packagesDirectory=
+#nuget.ignoreSourceFiles=true
+
+##### ocaml #####
+ocaml.aggregateModules=true
+#ocaml.switchName=
+#ocaml.runPreStep=false
+#ocaml.resolveDependencies=true
+#ocaml.ignoredScopes=with-test,with-doc
+#ocaml.ignoreSourceFiles=false
+
+##### paket #####
+#paket.runPreStep=false
+#paket.resolveDependencies=true
+#paket.ignoredGroups=
+#paket.ignoreSourceFiles=true
+#paket.exePath=
+
+##### php #####
+#php.runPreStep=false
+#php.resolveDependencies=true
+#php.includeDevDependencies=false
+
+##### python #####
+#python.uninstallWssPlugin=false
+#python.runPipenvPreStep=false
+#python.resolveSetupPyFiles=false
+#python.resolveHierarchyTree=true
+#python.resolveGlobalPackages=false
+#python.resolveDependencies=true
+#python.requirementsFileIncludes=requirements.txt,Pipfile
+#python.pipenvDevDependencies=false
+#python.pipPath=pip
+#python.path=python
+#python.isWssPluginInstalled=false
+#python.installVirtualenv=false
+#python.indexUrl=
+#python.ignoreSourceFiles=true
+#python.ignorePipInstallErrors=false
+#python.IgnorePipenvInstallErrors=false
+
+##### r_language #####
+#r.runPreStep=false
+#r.resolveDependencies=true
+#r.ignoreSourceFiles=true
+#r.cranMirrorUrl=
+
+##### ruby #####
+#ruby.runBundleInstall=false
+#ruby.resolveDependencies=true
+#ruby.overwriteGemFile=false
+#ruby.installMissingGems=false
+#ruby.ignoreSourceFiles=true
+
+##### sbt #####
+sbt.targetFolder=
+sbt.aggregateModules=true
+#sbt.runPreStep=false
+#sbt.resolveDependencies=true
+#sbt.includedScopes=compile,runtime
+#sbt.ignoreSourceFiles=false
+
+##### scm #####
+#scm.url=
+#scm.tag=
+#scm.branch=
+
+##### serverless #####
+#serverless.scanFunctions=false
+#serverless.region=
+#serverless.provider=aws-lambda
+#serverless.maxFunctions=10
+#serverless.includes=
+#serverless.excludes=
+
+[INFO] [2020-06-01 15:53:33,051 +0800] - 
+------------------------------------------------------------------------
+-------------------- End: Fetch Configuration --------------------------
+------------------------------------------------------------------------
+[WARN] [2020-06-01 15:53:33,058 +0800] - 
+------------------------------------------------------------------------
+-------------- START - File System Permissions Validations -------------
+------------------------------------------------------------------------
+[WARN] [2020-06-01 15:53:33,066 +0800] - Logs - File or Directory does not exists: /var/log/UA/Mon-Jun-01-2020-15.53.32
+[WARN] [2020-06-01 15:53:33,066 +0800] - Logs - File or Directory missing write permissions: /var/log/UA
+[WARN] [2020-06-01 15:53:33,066 +0800] - 
+------------------------------------------------------------------------
+-------------- END - File System Permissions Validations ---------------
+------------------------------------------------------------------------
+[DEBUG] [2020-06-01 15:53:33,192 +0800] - Converting offline request to JSON
+[INFO] [2020-06-01 15:53:33,497 +0800] - Reading information from request file ./EraseResult.txt
+[DEBUG] [2020-06-01 15:53:33,498 +0800] - Handling offline request, using offline file request parameters
+[INFO] [2020-06-01 15:53:33,528 +0800] - Initializing WhiteSource Client
+[INFO] [2020-06-01 15:53:33,532 +0800] - Service URL is https://saas.whitesourcesoftware.com/agent
+[INFO] [2020-06-01 15:53:33,631 +0800] - UpdateType set to OVERRIDE 
+[INFO] [2020-06-01 15:53:33,639 +0800] - 
+------------------------------------------------------------------------
+-------------------- Start: Check Policies -----------------------------
+------------------------------------------------------------------------
+[INFO] [2020-06-01 15:53:33,639 +0800] - Checking policies
+[INFO] [2020-06-01 15:53:38,542 +0800] - All dependencies conform with open source policies.
+[INFO] [2020-06-01 15:53:38,542 +0800] - Check Policies Support Token: 22067d297d54e449facf23f74266677181590998038114
+[INFO] [2020-06-01 15:53:39,384 +0800] - Policies report generated successfully
+[INFO] [2020-06-01 15:53:39,385 +0800] - 
+------------------------------------------------------------------------
+-------------------- End: Check Policies -------------------------------
+------------------------------------------------------------------------
+[INFO] [2020-06-01 15:53:39,394 +0800] - Sending Update
+[INFO] [2020-06-01 15:53:39,395 +0800] - 
+------------------------------------------------------------------------
+-------------------- Start: Update Inventory ---------------------------
+------------------------------------------------------------------------
+[INFO] [2020-06-01 15:53:41,146 +0800] - 
+------------------------------------------------------------------------
+-------------------- End: Update Inventory -----------------------------
+------------------------------------------------------------------------
+[INFO] [2020-06-01 15:53:41,147 +0800] - Inventory update results for Galaxy Software Services Corporation
+[INFO] [2020-06-01 15:53:41,147 +0800] - No new projects found.
+[INFO] [2020-06-01 15:53:41,147 +0800] - Updated projects:
+[INFO] [2020-06-01 15:53:41,147 +0800] - # wgcontainer#25
+[INFO] [2020-06-01 15:53:41,148 +0800] - Project name: wgcontainer#25, URL: https://saas.whitesourcesoftware.com/Wss/WSS.html#!project;id=2471920
+[INFO] [2020-06-01 15:53:41,148 +0800] - Support Token: 1014b7cb14ea7484bb7a7a4e5d2fbd5441590998041939
+[DEBUG] [2020-06-01 15:53:41,149 +0800] - Process finished with exit code SUCCESS (Inventory update results for Galaxy Software Services Corporation
+No new projects found.
+Updated projects:
+wgcontainer#25
+
+Project name: wgcontainer#25, project URL:https://saas.whitesourcesoftware.com/Wss/WSS.html#!project;id=2471920
+Support Token: 1014b7cb14ea7484bb7a7a4e5d2fbd5441590998041939)
+[INFO] [2020-06-01 15:53:41,152 +0800] - Log files are found at: /var/log//UA/Mon-Jun-01-2020-15.53.32
+[INFO] [2020-06-01 15:53:41,156 +0800] - 
+------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------- WhiteSource Scan Summary: --------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------
+======================================================================================================================================================
+Scan Origin: Offline
+======================================================================================================================================================
+Step                                 Completion Status                              Elapsed                              Comments                              
+======================================================================================================================================================
+Fetch Configuration                     COMPLETED                                 00:00:00.425                           --------
+Check Policies                          COMPLETED                                 00:00:05.746                           --------
+Update Inventory                        COMPLETED                                 00:00:01.751                   1 updated projects
+
+======================================================================================================================================================
+Elapsed running time:                                                             00:00:07.922
+======================================================================================================================================================
+Process finished with exit code SUCCESS (0)
