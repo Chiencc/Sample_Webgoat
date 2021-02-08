@@ -17,11 +17,13 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
-- task: WhiteSource@20
+- task: WhiteSource@21
   inputs:
+    cwd: '$(System.DefaultWorkingDirectory)'
+    projectName: 'Chiencc'
     configuration: |
       npm.resolveLockFile=true
-            npm.resolveDependencies=true
-            maven.runPreStep=true
-            maven.resolveDependencies=true
-            maven.aggregateModules=true
+      npm.resolveDependencies=true
+      maven.runPreStep=true
+      maven.resolveDependencies=true
+      maven.aggregateModules=true
