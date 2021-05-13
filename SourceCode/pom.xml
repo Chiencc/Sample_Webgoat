@@ -122,7 +122,7 @@
         <commons-io.version>2.4</commons-io.version>
         <commons-lang3.version>3.4</commons-lang3.version>
         <commons-logging.version>1.2</commons-logging.version>
-        <coveralls-maven-plugin.version>4.0.0</coveralls-maven-plugin.version>
+        <coveralls-maven-plugin.version>4.3.0</coveralls-maven-plugin.version>
         <ecs.version>1.4.2</ecs.version>
         <guava.version>18.0</guava.version>
         <h2.version>1.4.190</h2.version>
