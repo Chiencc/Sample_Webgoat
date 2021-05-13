@@ -1,4 +1,6 @@
- "remediateSettings": {
+{
+  "remediateSettings": {
     "enableRenovate": true,
     "extends": ["config:base"]
   }
+}
